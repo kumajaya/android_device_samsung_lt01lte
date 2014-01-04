@@ -18,6 +18,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Galaxy Note 2 LTE"
+#define BTM_DEF_LOCAL_NAME   "SM-T315"
 
 #endif

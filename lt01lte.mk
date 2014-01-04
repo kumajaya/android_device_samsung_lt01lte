@@ -14,19 +14,41 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/t0lte
+$(call inherit-product, device/samsung/lt013g/common.mk)
+
+LOCAL_PATH := device/samsung/lt01lte
+
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.smdk4x12:root/fstab.smdk4x12 \
-    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
-    $(LOCAL_PATH)/rootdir/lpm.rc:root/lpm.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.smdk4x12.rc:root/ueventd.smdk4x12.rc
+    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/lt01lte
+
+# Gps
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+
+# Product specific Packages
+PRODUCT_PACKAGES += \
+    Stk \
+    SamsungServiceMode
+
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=SamsungQualcommRIL \
+    mobiledata.interfaces=rmnet0,pdp0,wlan0,gprs,ppp0
+
+# These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-# Include common makefile
-$(call inherit-product, device/samsung/t0lte/common.mk)
+$(call inherit-product-if-exists, vendor/samsung/lt01lte/lt01lte-vendor.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/t0lte/t0lte-vendor.mk)
+$(call inherit-product, device/samsung/lt01-common/common.mk)
+

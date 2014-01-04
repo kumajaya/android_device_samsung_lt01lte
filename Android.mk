@@ -16,8 +16,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter t0lte t0lteatt t0ltetmo i605 l900 r950,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),lt01lte)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+COMMON_LT01_DIRS := irda liblights
+include $(foreach common_dirs,$(COMMON_LT01_DIRS),device/samsung/lt013g/$(common_dirs)/Android.mk)
 
 endif
