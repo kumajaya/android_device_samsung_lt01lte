@@ -10,7 +10,6 @@ system/bin/qmiproxy
 system/bin/qmuxd
 system/bin/rild
 system/bin/sec-ril
-system/bin/sensorservice
 system/bin/smdexe
 system/etc/Diag.cfg
 system/etc/Diag_audio.cfg
@@ -55,7 +54,5 @@ system/lib/libril-qc-qmi-1.so
 system/lib/libril-qcril-hook-oem.so
 system/lib/libsecnativefeature.so
 system/lib/libsecril-client.so
-system/lib/libsensorservice.so
 system/lib/hw/gps.exynos4.so
-system/lib/hw/sensors.smdk4x12.so
 system/lib/hw/vendor-camera.smdk4x12.so

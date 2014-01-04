@@ -51,4 +51,3 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/samsung/lt01lte/lt01lte-vendor.mk)
 
 $(call inherit-product, device/samsung/lt01-common/common.mk)
-
