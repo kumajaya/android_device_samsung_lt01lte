@@ -22,3 +22,9 @@ persist.radio.apm_sim_not_pwdn=1
 
 ro.qc.sdk.izat.premium_enabled=0
 persist.gps.qc_nlp_in_use=0
+
+ro.device.cpu=Dual-core 1.5 GHz
+ro.device.gpu=Mali-400MP
+ro.device.rear_cam=5.0 MP
+ro.device.front_cam=1.3 MP
+ro.device.screen_res=8.0 inch 720p

@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_lt01lte.mk
+    $(LOCAL_DIR)/full_lt01lte.mk \
+    $(LOCAL_DIR)/omni_lt01lte.mk

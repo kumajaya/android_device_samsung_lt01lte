@@ -1,0 +1,13 @@
+# mount point       fstype       device                  device2                  flags
+/efs                ext4         /dev/block/platform/dw_mmc/by-name/EFS           flags=display="EFS";backup=1
+/boot               emmc         /dev/block/platform/dw_mmc/by-name/BOOT          flags=display="Boot";backup=1
+/recovery           emmc         /dev/block/platform/dw_mmc/by-name/RECOVERY      flags=display="Recovery";backup=1
+/cache              ext4         /dev/block/platform/dw_mmc/by-name/CACHE         flags=display="Cache";backup=0
+/system             ext4         /dev/block/platform/dw_mmc/by-name/SYSTEM        flags=display="System";backup=1
+/data               ext4         /dev/block/platform/dw_mmc/by-name/USERDATA      length=-16384    flags=display="Data";backup=1
+/preload            ext4         /dev/block/platform/dw_mmc/by-name/HIDDEN        flags=display="Preload";backup=0
+/tombstones         emmc         /dev/block/platform/dw_mmc/by-name/TOMBSTONES    flags=display="Tombstones";backup=1
+/modem              emmc         /dev/block/platform/dw_mmc/by-name/RADIO         flags=display="Modem";backup=1
+
+/sdcard             datamedia    /dev/null
+/external_sdcard    exfat        /dev/block/mmcblk1p1    /dev/block/mmcblk1       flags=display="External SDCard";storage;wipeingui;removable

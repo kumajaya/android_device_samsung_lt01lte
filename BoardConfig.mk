@@ -45,3 +45,6 @@ TARGET_OTA_ASSERT_DEVICE := lt01lte,lt01ltexx,SM-T315
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/lt01lte/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
+
+# TWRP
+DEVICE_RESOLUTION := 800x1280
