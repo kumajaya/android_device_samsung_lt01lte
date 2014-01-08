@@ -16,9 +16,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
-
 -include device/samsung/lt01-common/BoardCommonConfig.mk
--include device/samsung/lt013g/BoardCommonConfig.mk
 
 # RIL
 COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND='{ "ril.ks.status", AID_SYSTEM, 0 },'
