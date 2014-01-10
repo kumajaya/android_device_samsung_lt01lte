@@ -1,10 +1,8 @@
 system/bin/at_distributor
 system/bin/diag_uart_log
 system/bin/efsks
-system/bin/geomagneticd
 system/bin/ks
 system/bin/netmgrd
-system/bin/orientationd
 system/bin/qcks
 system/bin/qmiproxy
 system/bin/qmuxd
@@ -15,6 +13,7 @@ system/etc/Diag.cfg
 system/etc/Diag_audio.cfg
 system/etc/Diag_gps.cfg
 system/etc/Diag_zero.cfg
+system/etc/plmn_se13.bin
 system/etc/wifi/bcmdhd_apsta.bin_b2
 system/etc/wifi/bcmdhd_mfg.bin_b2
 system/etc/wifi/bcmdhd_p2p.bin_b2
@@ -30,6 +29,7 @@ system/lib/libdiag.so
 system/lib/libdsi_netctrl.so
 system/lib/libdsutils.so
 system/lib/libfactoryutil.so
+system/lib/libgdmcprov.so
 system/lib/libgps.utils.so
 system/lib/libidl.so
 system/lib/libloc_adapter.so
@@ -52,7 +52,8 @@ system/lib/libreference-ril.so
 system/lib/libril.so
 system/lib/libril-qc-qmi-1.so
 system/lib/libril-qcril-hook-oem.so
+system/lib/libseckeyprov.so
 system/lib/libsecnativefeature.so
 system/lib/libsecril-client.so
-system/lib/hw/gps.exynos4.so
+system/lib/hw/gps.default.so
 system/lib/hw/vendor-camera.smdk4x12.so

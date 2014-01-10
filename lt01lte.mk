@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/lt013g/common.mk)
-
 LOCAL_PATH := device/samsung/lt01lte
 
 # Overlay
@@ -37,11 +35,6 @@ PRODUCT_COPY_FILES += \
 # TWRP
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
-
-# Product specific Packages
-PRODUCT_PACKAGES += \
-    Stk \
-    SamsungServiceMode
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \

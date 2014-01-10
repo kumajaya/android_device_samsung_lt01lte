@@ -16,9 +16,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
-
 -include device/samsung/lt01-common/BoardCommonConfig.mk
--include device/samsung/lt013g/BoardCommonConfig.mk
 
 # RIL
 COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND='{ "ril.ks.status", AID_SYSTEM, 0 },'
@@ -46,5 +44,5 @@ TARGET_OTA_ASSERT_DEVICE := lt01lte,lt01ltexx,SM-T315
 TARGET_RECOVERY_FSTAB := device/samsung/lt01lte/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
 
-# TWRP
+# TWRP (more in BoardCommonConfig.mk)
 DEVICE_RESOLUTION := 800x1280
