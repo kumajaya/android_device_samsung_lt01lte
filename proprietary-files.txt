@@ -55,5 +55,5 @@ system/lib/libril-qcril-hook-oem.so
 system/lib/libseckeyprov.so
 system/lib/libsecnativefeature.so
 system/lib/libsecril-client.so
-system/lib/hw/gps.exynos4.so
+system/lib/hw/gps.default.so
 system/lib/hw/vendor-camera.smdk4x12.so
