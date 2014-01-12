@@ -14,6 +14,7 @@ system/etc/Diag_audio.cfg
 system/etc/Diag_gps.cfg
 system/etc/Diag_zero.cfg
 system/etc/plmn_se13.bin
+system/etc/plmn_delta.bin
 system/etc/wifi/bcmdhd_apsta.bin_b2
 system/etc/wifi/bcmdhd_mfg.bin_b2
 system/etc/wifi/bcmdhd_p2p.bin_b2
